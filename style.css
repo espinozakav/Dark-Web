@@ -22,6 +22,7 @@ main {
 .tamañoLogo {
     width: 150px;
     display: inline;
+    transition: all 2s;
 }
 .centrar {
     text-align: center;
@@ -40,6 +41,10 @@ ul {
 .less-margin {
     font-size: 50px;
 }
+.less-margin:hover {
+    text-decoration: none;
+    color: inherit;
+}
 article {
     padding: 30px 0;
 }
@@ -57,7 +62,7 @@ section {
 
 .bordes  {
     border: 2px groove white;
-    margin-inline: 50px;
+    margin: 0 50px;
     padding: 40px;
 }
 .winden {
@@ -66,7 +71,7 @@ section {
     margin-bottom: 20px;
     margin-top: 10px;
 }
-header nav ul li:hover {
+header nav ul li:hover  {
     text-decoration: underline;
     color: yellow;
 }
@@ -79,7 +84,7 @@ header nav ul li:hover {
     color: yellow;
 }
 footer {
-    padding-block: 50px;
+    padding: 50px 0;
 }
 nav {
     display: flex;
@@ -116,14 +121,6 @@ nav {
 
 /* Medias queries */
 
-@media (max-width: 320px) { 
-}
-
-@media (max-width: 480px) {
-}
-
-@media (max-width: 600px) {
-}
 
 @media (max-width: 768px) {
     nav {
@@ -167,6 +164,12 @@ nav {
     }
 }
 
-@media (max-width: 1200px) {
- 
+.tamañoLogo:hover {
+    transform: translateX(140px) rotate(90deg) scale(1);
+    -webkit-transform: translateX(140px) rotate(90deg) scale(1);
+    -o-transform: translateX(140px) rotate(90deg) scale(1);
+    -moz-transform: translateX(140px) rotate(90deg) scale(1);
+} 
+.bordes {
+    background-image: linear-gradient(to top, #0e0d0d, #585656);
 }
