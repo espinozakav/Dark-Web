@@ -109,6 +109,8 @@ nav {
 
 .imgGaleria {
     border-radius: 30px;
+    display: block;
+    margin: auto;
 }
 
 .rotate {
