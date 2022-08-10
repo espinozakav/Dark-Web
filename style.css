@@ -164,7 +164,11 @@ nav {
     }
 }
 
-.tamañoLogo:hover {
+.logo-dark {
+    transition: all 2s;
+}
+
+.logo-dark:hover {
     transform: translateX(140px) rotate(90deg) scale(1);
     -webkit-transform: translateX(140px) rotate(90deg) scale(1);
     -o-transform: translateX(140px) rotate(90deg) scale(1);
