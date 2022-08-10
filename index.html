@@ -14,53 +14,74 @@
 <body>
 
 	<header>
-		<nav>
-			<img src="img/logo.jpg" class="tamañoLogo line"/>
-			<ul class="centrar">
-				<li>Sinopsis</li>
-				<li class="less-margin"><span>&#183;</span></li>
-				<li>Trailer</li>
-				<li class="less-margin"><span>&#183;</span></li>
-				<li>Personajes</li>
-				<li class="less-margin"><span>&#183;</span></li>
-				<li>Cronología</li>
-				<li class="less-margin"><span>&#183;</span></li>
-				<li>
-					<a href="galeria.html" class="link">Galería</a>
-				</li>
-			</ul>
+		<nav class="navbar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<a class="navbar-brand" href="#">
+							<img src="img/logo.jpg" class="logo-dark" alt="" width="150">
+						</a>
+					</div>
+					<div class="col">
+						<ul class="h-100 justify-content-center">
+							<li>Sinopsis</li>
+							<li class="less-margin"><span>&#183;</span></li>
+							<li>Trailer</li>
+							<li class="less-margin"><span>&#183;</span></li>
+							<li>Personajes</li>
+							<li class="less-margin"><span>&#183;</span></li>
+							<li>Cronología</li>
+							<li class="less-margin"><span>&#183;</span></li>
+							<li>
+								<a href="galeria.html" class="link">Galería</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</nav>
+
+
 		<article class="winden centrar">
 			<span class="imageTitle">W i n d e n</span>
 		</article>
 	</header>
-	<main>
-		<h1 class="centrar">D A R K</h1>
-		<section class="bordes sinopsis">
-			<h2 class="centrar">Sinopsis</h2>
-			<p class="parrafoSinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-				anim id est laborum. </p>
-		</section>
-		<section>
-			<article>
-				<img class="index-img" src="img/genealogico.jpg" />
-			</article>
-		</section>
-		<section class="trailer">
-			<h2 class="centrar">Trailer</h2>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_AZCvCacw" title="YouTube video player"
-				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
-		</section>
-		<br />
-		
+	<main class="container">
+
+		<div class="row">
+			<div class="col">
+				<h1 class="text-center">D A R K</h1>
+				<section class="border border-warning border-2 rounded-1 sinopsis mt-5">
+					<h2 class="centrar">Sinopsis</h2>
+					<p class="parrafoSinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+						anim id est laborum. </p>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<section>
+					<article>
+						<img class="index-img" src="img/genealogico.jpg" />
+					</article>
+				</section>
+				<section class="trailer mt-5">
+					<h2 class="text-center">Trailer</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_AZCvCacw" title="YouTube video player"
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</section>
+			</div>
+		</div>
+
 	</main>
 
-	<footer class="centrar">
+	<footer>
 		<section>
 			<span>
 				SIC MVNDVS CREATVS EST
