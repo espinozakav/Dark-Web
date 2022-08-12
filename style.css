@@ -1,181 +1,44 @@
 @font-face {
-    font-family: "GillSans";
-    src: url("fonts/GillSans/Gill\ Sans.otf");
-}
-* {
-    margin:0;
-    padding:0;
+  font-family: "GillSans";
+  src: url("fonts/GillSans/Gill\ Sans.otf");
 }
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: black;
-    color: white;
-    width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: black;
+  color: white;
 }
 
-main {
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 30px;
+a.nav-link:hover {
+  color: yellow;
 }
 
-.tamañoLogo {
-    width: 150px;
-    display: inline;
-    transition: all 2s;
-}
-.centrar {
-    text-align: center;
-}
-ul li {
-    margin: 0 20px;
-    list-style: none;
-}
-ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.less-margin {
-    font-size: 50px;
-}
-.less-margin:hover {
-    text-decoration: none;
-    color: inherit;
-}
-article {
-    padding: 30px 0;
-}
-iframe {
-    align-self: center;
-}
-section {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
-.trailer, .sinopsis {
-    flex-direction: column;
-}
-
-.bordes  {
-    border: 2px groove white;
-    margin: 0 50px;
-    padding: 40px;
-}
 .winden {
-    background-image: url(img/winden.jpg);
-    background-position: right center;
-    margin-bottom: 20px;
-    margin-top: 10px;
+  background-image: url(img/winden.jpg);
+  background-position: right center;
+  height: 360px;
 }
-header nav ul li:hover  {
-    text-decoration: underline;
-    color: yellow;
-}
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-.link:hover {
-    text-decoration: underline;
-    color: yellow;
-}
-footer {
-    padding: 50px 0;
-}
-nav {
-    display: flex;
-}
-.parrafoSinopsis {
-    padding: 10px;
-}
+
 .imageTitle {
-    font-size: 30px;
+  font-size: 45px;
 }
 
-/* Estilos Galería */
-
-.galery {
-    display: flex;
-    flex-direction: column;
+.logo {
+  transition: all 2s;
 }
 
-.galery-space {
-    justify-content: space-evenly;
-}
-
-.imgGaleria {
-    border-radius: 30px;
-    display: block;
-    margin: auto;
-}
-
-.rotate {
-    transform: rotate(270deg);
-}
-
-.aligned-center {
-    align-self: center;
-}
-
-/* Medias queries */
-
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    .tamañoLogo {
-        align-self: center;
-    }
-
-    .logo {
-        align-self: center;
-    }
-
-    ul {
-        margin: 20px 0;
-        flex-direction: column;
-    }
-
-    .imgGaleria {
-        border-radius: 30px;
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        object-position: bottom;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .index-img {
-        height: 600px;
-    }
-
-    footer section {
-        padding: 0 30px;
-    }
-
-    .trailer {
-        display: none;
-    }
-}
-
-.logo-dark {
-    transition: all 2s;
-}
-
-.logo-dark:hover {
-    transform: translateX(140px) rotate(90deg) scale(1);
-    -webkit-transform: translateX(140px) rotate(90deg) scale(1);
-    -o-transform: translateX(140px) rotate(90deg) scale(1);
-    -moz-transform: translateX(140px) rotate(90deg) scale(1);
+.logo:hover {
+	transform: translateX(140px) rotate(90deg) scale(1);
+	-webkit-transform: translateX(140px) rotate(90deg) scale(1);
+	-o-transform: translateX(140px) rotate(90deg) scale(1);
+	-moz-transform: translateX(140px) rotate(90deg) scale(1);
 } 
-.bordes {
-    background-image: linear-gradient(to top, #0e0d0d, #585656);
+
+@media (max-width: 900px) {
+	.index-img {
+		width: 300px;
+	}
+
+	.trailer {
+		width: 300px;
+	}
 }
