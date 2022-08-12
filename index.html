@@ -14,45 +14,50 @@
 <body>
 
 	<header>
-		<nav class="navbar">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container-fluid">
-				<section class="row">
-					<article class="col">
-						<a class="navbar-brand" href="#">
-							<img src="img/logo.jpg" class="logo-dark" alt="" width="150">
-						</a>
-					</article>
-					<article class="col">
-						<ul class="h-100 justify-content-center">
-							<li>Sinopsis</li>
-							<li class="less-margin"><span>&#183;</span></li>
-							<li>Trailer</li>
-							<li class="less-margin"><span>&#183;</span></li>
-							<li>Personajes</li>
-							<li class="less-margin"><span>&#183;</span></li>
-							<li>Cronología</li>
-							<li class="less-margin"><span>&#183;</span></li>
-							<li>
-								<a href="galeria.html" class="link">Galería</a>
-							</li>
-						</ul>
-					</article>
-				</section>
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.jpg" class="logo" alt="" width="150">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">Sinopsis</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Trailer</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Personajes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Cronología</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="galeria.html">Galería</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
 
-		<article class="winden centrar">
-			<span class="imageTitle">W i n d e n</span>
+		<article class="winden d-flex justify-content-center">
+			<span class="align-self-center imageTitle">W i n d e n</span>
 		</article>
 	</header>
+
+
 	<main class="container">
 
-		<section class="row">
-			<article class="col">
+		<section class="row space">
+			<article class="col-12">
 				<h1 class="text-center">D A R K</h1>
-				<section class="border border-warning border-2 rounded-1 sinopsis mt-5">
-					<h2 class="centrar">Sinopsis</h2>
+				<section class="border border-warning border-2 rounded-1 sinopsis mt-5 px-5 py-3">
+					<h2 class="text-center">Sinopsis</h2>
 					<p class="parrafoSinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore
 						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -63,16 +68,19 @@
 			</article>
 		</section>
 
-		<section class="row">
-			<article class="col">
-				<section>
-					<article>
-						<img class="index-img" src="img/genealogico.jpg" />
-					</article>
-				</section>
-				<section class="trailer mt-5">
+		<section class="row space">
+			<article class="col-12">
+				<article class="d-flex justify-content-center">
+					<img class="index-img" src="img/genealogico.jpg" />
+				</article>
+			</article>
+		</section>
+
+		<section class="row space">
+			<article class="col-12">
+				<section class="d-flex flex-column">
 					<h2 class="text-center">Trailer</h2>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_AZCvCacw" title="YouTube video player"
+					<iframe class="align-self-center trailer" width="560" height="315" src="https://www.youtube.com/embed/IJ_AZCvCacw" title="YouTube video player"
 						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</section>
@@ -81,13 +89,13 @@
 
 	</main>
 
-	<footer>
-		<section>
+	<footer class="d-flex flex-column">
+		<section class="align-self-center">
 			<span>
 				SIC MVNDVS CREATVS EST
 			</span>
 		</section>
-		<section>
+		<section class="align-self-center">
 			<span>Lorem ipsum dolor sit amet</span>
 			<span>Lorem ipsum dolor sit amet</span>
 			<span>Lorem ipsum dolor sit amet</span>
