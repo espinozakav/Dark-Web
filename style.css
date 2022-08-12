@@ -31,7 +31,11 @@ a.nav-link:hover {
 	-webkit-transform: translateX(140px) rotate(90deg) scale(1);
 	-o-transform: translateX(140px) rotate(90deg) scale(1);
 	-moz-transform: translateX(140px) rotate(90deg) scale(1);
-} 
+}
+
+.space {
+	margin: 100px 0;
+}
 
 @media (max-width: 900px) {
 	.index-img {
@@ -40,5 +44,15 @@ a.nav-link:hover {
 
 	.trailer {
 		width: 300px;
+	}
+
+	.imgGaleria {
+		width: 300px;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1080px) {
+	.imgGrande {
+		width: 600px;
 	}
 }
