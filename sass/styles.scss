@@ -1,0 +1,51 @@
+@import 'images';
+
+$defaultWidth: 300px;
+
+@font-face {
+  font-family: "GillSans";
+  src: url("fonts/GillSans/Gill\ Sans.otf");
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+	&.nav-link {
+		&:hover {
+			color: yellow;
+		}
+	}
+}
+
+span {
+	&.imageTitle {
+		font-size: 45px;
+	}
+}
+
+.space {
+	margin: 100px 0;
+}
+
+@media (max-width: 900px) {
+	.index-img {
+		width: $defaultWidth;
+	}
+
+	.trailer {
+		width: $defaultWidth;
+	}
+
+	.imgGaleria {
+		width: $defaultWidth;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1080px) {
+	.imgGrande {
+		width: 600px;
+	}
+}
