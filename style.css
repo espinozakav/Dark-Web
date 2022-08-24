@@ -1,3 +1,7 @@
+.imgRounded, .imgGaleria {
+  border-radius: 30px;
+}
+
 article.winden {
   background-image: url(img/winden.jpg);
   background-position: right center;
@@ -36,6 +40,11 @@ span.imageTitle {
 
 .space {
   margin: 100px 0;
+}
+
+.imgGaleria.firstImage {
+  border-radius: 50%;
+  width: 50%;
 }
 
 @media (max-width: 900px) {
