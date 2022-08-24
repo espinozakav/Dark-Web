@@ -1,6 +1,10 @@
+@use "sass:map";
 @import 'images';
+@import 'mixins';
 
 $defaultWidth: 300px;
+
+$widths: ("default": $defaultWidth, "large": 600px);
 
 @font-face {
   font-family: "GillSans";
@@ -30,22 +34,30 @@ span {
 	margin: 100px 0;
 }
 
+.imgGaleria {
+	@extend .imgRounded;
+	&.firstImage {
+		border-radius: 50%;
+		width: 50%;
+	}
+}
+
 @media (max-width: 900px) {
 	.index-img {
-		width: $defaultWidth;
+		@include widths(map.get($widths, "default"));
 	}
 
 	.trailer {
-		width: $defaultWidth;
+		@include widths(map.get($widths, "default"));
 	}
 
 	.imgGaleria {
-		width: $defaultWidth;
+		@include widths(map.get($widths, "default"));
 	}
 }
 
 @media (min-width: 900px) and (max-width: 1080px) {
 	.imgGrande {
-		width: 600px;
+		@include widths(map.get($widths, "large"));
 	}
 }
