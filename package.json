@@ -1,0 +1,21 @@
+{
+  "name": "dark-web",
+  "version": "1.0.0",
+  "description": "Fanpage de la serie Dark de Netflix.",
+  "main": "index.js",
+  "scripts": {
+    "comile:scss": "sass sass/styles.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-espinozakav:espinozakav/Dark-Web.git"
+  },
+  "author": "Karla Espinoza Silva",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "sass": "^1.54.5"
+  }
+}
