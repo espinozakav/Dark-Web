@@ -3,23 +3,27 @@
 @import 'mixins';
 
 $defaultWidth: 300px;
-
+$fontSizes: ("default": 16px, "date": 50px);
 $widths: ("default": $defaultWidth, "large": 600px);
+$fontFamily: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+$darkColor: black;
+$lightColor: white;
+$hoverLinkColor: yellow;
 
 @font-face {
   font-family: "GillSans";
   src: url("fonts/GillSans/Gill\ Sans.otf");
 }
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: black;
-  color: white;
+  font-family: $fontFamily;
+  background-color: $darkColor;
+  color: $lightColor;
 }
 
 a {
 	&.nav-link {
 		&:hover {
-			color: yellow;
+			color: $hoverLinkColor;
 		}
 	}
 }
@@ -42,22 +46,21 @@ span {
 	}
 }
 
-@media (max-width: 900px) {
-	.index-img {
-		@include widths(map.get($widths, "default"));
+$classes: '.index-img', '.trailer', '.imgGaleria';
+@each $class in $classes {
+	#{$class} {
+		@media ( max-width: 900px ) {
+			@include widths(map.get($widths, "default"));
+		}
 	}
+} 
 
-	.trailer {
-		@include widths(map.get($widths, "default"));
-	}
-
-	.imgGaleria {
-		@include widths(map.get($widths, "default"));
+.imgGrande {
+	@media (min-width: 900px) and (max-width: 1080px) {
+		@include widths(map.get($widths, "large"));
 	}
 }
 
-@media (min-width: 900px) and (max-width: 1080px) {
-	.imgGrande {
-		@include widths(map.get($widths, "large"));
-	}
+.dateFont {
+	font-size: map.get($fontSizes, "date");
 }
