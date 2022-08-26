@@ -51,17 +51,28 @@ span.imageTitle {
   .index-img {
     width: 300px;
   }
+}
+
+@media (max-width: 900px) {
   .trailer {
     width: 300px;
   }
+}
+
+@media (max-width: 900px) {
   .imgGaleria {
     width: 300px;
   }
 }
+
 @media (min-width: 900px) and (max-width: 1080px) {
   .imgGrande {
     width: 600px;
   }
+}
+
+.dateFont {
+  font-size: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
