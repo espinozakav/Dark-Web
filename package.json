@@ -4,7 +4,7 @@
   "description": "Fanpage de la serie Dark de Netflix.",
   "main": "index.js",
   "scripts": {
-    "comile:scss": "sass sass/styles.scss style.css"
+    "compile:scss": "sass sass/styles.scss style.css"
   },
   "repository": {
     "type": "git",

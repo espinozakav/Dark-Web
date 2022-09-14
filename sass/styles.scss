@@ -3,7 +3,7 @@
 @import 'mixins';
 
 $defaultWidth: 300px;
-$fontSizes: ("default": 16px, "date": 50px);
+$fontSizes: ("default": 16px, "date": 50px, "cronologia": 20px, "h3": 24px);
 $widths: ("default": $defaultWidth, "large": 600px);
 $fontFamily: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 $darkColor: black;
@@ -18,6 +18,10 @@ body {
   font-family: $fontFamily;
   background-color: $darkColor;
   color: $lightColor;
+}
+
+h3 {
+	font-size: map.get($fontSizes, "h3");
 }
 
 a {
@@ -63,4 +67,8 @@ $classes: '.index-img', '.trailer', '.imgGaleria';
 
 .dateFont {
 	font-size: map.get($fontSizes, "date");
+}
+
+.cronologia-font {
+	font-size: map.get($fontSizes, "cronologia");
 }
