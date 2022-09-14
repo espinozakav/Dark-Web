@@ -72,3 +72,7 @@ $classes: '.index-img', '.trailer', '.imgGaleria';
 .cronologia-font {
 	font-size: map.get($fontSizes, "cronologia");
 }
+
+.sizeImg {
+	width: 800px
+} 
