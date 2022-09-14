@@ -7,73 +7,103 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>D A R K</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-	<main>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.jpg" class="logo" alt="" width="150">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">Sinopsis</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Trailer</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Personajes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Cronología</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="galeria.html">Galería</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-		<header>
-			<nav>
-				<img src="img/logo.jpg" class="tamañoLogo line"/>
-				<ul class="centrar">
-					<li>Sinopsis</li>
-					<li class="less-margin"><span>&#183;</span></li>
-					<li>Trailer</li>
-					<li class="less-margin"><span>&#183;</span></li>
-					<li>Personajes</li>
-					<li class="less-margin"><span>&#183;</span></li>
-					<li>Cronología</li>
-					<li class="less-margin"><span>&#183;</span></li>
-					<li>
-						<a href="galeria.html" class="link">Galería</a>
-					</li>
-				</ul>
-			</nav>
-			<article class="winden centrar">
-				<span class="imageTitle">W i n d e n</span>
-			</article>
-		</header>
 
-		<h1 class="centrar">D A R K</h1>
-		<section class="bordes sinopsis">
-			<h2 class="centrar">Sinopsis</h2>
-			<p class="parrafoSinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-				anim id est laborum. </p>
-		</section>
-		<section>
-			<article>
-				<img class="index-img" src="img/genealogico.jpg" />
+		<article class="winden d-flex justify-content-center">
+			<span class="align-self-center imageTitle">W i n d e n</span>
+		</article>
+	</header>
+
+
+	<main class="container">
+
+		<section class="row space">
+			<article class="col-12">
+				<h1 class="text-center">D A R K</h1>
+				<section class="border border-warning border-2 rounded-1 sinopsis mt-5 px-5 py-3">
+					<h2 class="text-center">Sinopsis</h2>
+					<p class="parrafoSinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+						anim id est laborum. </p>
+				</section>
 			</article>
 		</section>
-		<section class="trailer">
-			<h2 class="centrar">Trailer</h2>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_AZCvCacw" title="YouTube video player"
-				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
+
+		<section class="row space">
+			<article class="col-12">
+				<article class="d-flex justify-content-center">
+					<img class="index-img" src="img/genealogico.jpg" />
+				</article>
+			</article>
 		</section>
-		<br />
-		<footer class="centrar">
-			<section>
-				<span>
-					SIC MVNDVS CREATVS EST
-				</span>
-			</section>
-			<section>
-				<span>Lorem ipsum dolor sit amet</span>
-				<span>Lorem ipsum dolor sit amet</span>
-				<span>Lorem ipsum dolor sit amet</span>
-				<span>Lorem ipsum dolor sit amet</span>
-				<span>Lorem ipsum dolor sit amet</span>
-			</section>
-		</footer>
+
+		<section class="row space">
+			<article class="col-12">
+				<section class="d-flex flex-column">
+					<h2 class="text-center">Trailer</h2>
+					<iframe class="align-self-center trailer" width="560" height="315" src="https://www.youtube.com/embed/IJ_AZCvCacw" title="YouTube video player"
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</section>
+			</article>
+		</section>
+
 	</main>
 
+	<footer class="d-flex flex-column">
+		<section class="align-self-center">
+			<span>
+				SIC MVNDVS CREATVS EST
+			</span>
+		</section>
+		<section class="align-self-center">
+			<span>Lorem ipsum dolor sit amet</span>
+			<span>Lorem ipsum dolor sit amet</span>
+			<span>Lorem ipsum dolor sit amet</span>
+			<span>Lorem ipsum dolor sit amet</span>
+			<span>Lorem ipsum dolor sit amet</span>
+		</section>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
