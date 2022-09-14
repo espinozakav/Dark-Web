@@ -37,6 +37,11 @@ h3 {
 a.nav-link:hover {
   color: yellow;
 }
+a.serie-netflix {
+  text-decoration: none;
+  font-size: 25px;
+  color: yellow;
+}
 
 span.imageTitle {
   font-size: 45px;
@@ -44,6 +49,11 @@ span.imageTitle {
 
 .space {
   margin: 100px 0;
+}
+
+section.button-to-top {
+  right: 25px;
+  top: 25px;
 }
 
 .imgGaleria.firstImage {

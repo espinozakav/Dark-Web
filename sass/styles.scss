@@ -3,7 +3,7 @@
 @import 'mixins';
 
 $defaultWidth: 300px;
-$fontSizes: ("default": 16px, "date": 50px, "cronologia": 20px, "h3": 24px);
+$fontSizes: ("default": 16px, "date": 50px, "cronologia": 20px, "h3": 24px, "link-footer": 25px);
 $widths: ("default": $defaultWidth, "large": 600px);
 $fontFamily: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 $darkColor: black;
@@ -30,6 +30,12 @@ a {
 			color: $hoverLinkColor;
 		}
 	}
+
+	&.serie-netflix {
+		text-decoration: none;
+		font-size: map.get($fontSizes, "link-footer");
+		color: yellow;
+	}
 }
 
 span {
@@ -40,6 +46,13 @@ span {
 
 .space {
 	margin: 100px 0;
+}
+
+section {
+	&.button-to-top {
+		right: 25px;
+		top: 25px;
+	}
 }
 
 .imgGaleria {
@@ -74,5 +87,5 @@ $classes: '.index-img', '.trailer', '.imgGaleria';
 }
 
 .sizeImg {
-	width: 800px
+	width: 800px;
 } 
